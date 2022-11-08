@@ -8,6 +8,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final container = Container(
+    color: Colors.yellow,
+    height: 40.0,
+    width: 40.0,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,11 +28,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Container(
-                      color: Colors.yellow,
-                      height: 40.0,
-                      width: 40.0,
-                    ),
+                    container,
                     Padding(
                       padding: EdgeInsets.all(16.0),
                     ),
